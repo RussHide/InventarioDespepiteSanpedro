@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="InventarioFX.jnlp">
+  <information>
+    <title>InventarioFX</title>
+    <vendor>Kay</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="InventarioFX.jar" size="524455" download="eager" />
+    <jar href="lib\SparseBitSet-1.2.jar" size="24510" download="eager" />
+    <jar href="lib\animateFX-1.2.2.jar" size="96551" download="eager" />
+    <jar href="lib\commons-codec-1.15.jar" size="353793" download="eager" />
+    <jar href="lib\commons-collections4-4.4.jar" size="751914" download="eager" />
+    <jar href="lib\commons-compress-1.20.jar" size="632424" download="eager" />
+    <jar href="lib\commons-math3-3.6.1.jar" size="2213560" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\itext5-itextpdf-5.5.12.jar" size="2320211" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\poi-5.0.0.jar" size="2906684" download="eager" />
+    <jar href="lib\poi-ooxml-5.0.0.jar" size="1880314" download="eager" />
+    <jar href="lib\poi-ooxml-full-5.0.0.jar" size="19267559" download="eager" />
+    <jar href="lib\xmlbeans-4.0.0.jar" size="2493024" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="InventarioFX" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="inventariofx.InventarioFX"  name="InventarioFX" />
+  <update check="always"/>
+</jnlp>

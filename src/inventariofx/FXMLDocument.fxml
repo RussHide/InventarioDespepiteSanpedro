@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneInicio" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventariofx.FXMLDocumentController">
+   <left>
+      <VBox prefWidth="180.0" style="-fx-background-color: #7661B9;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="65.0" />
+            <JFXButton id="btnInicio" fx:id="btnLimpiar" maxWidth="1.7976931348623157E308" onAction="#btnLimpiar" prefHeight="60.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Limpiar" textFill="WHITE">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="CLOSE" size="25" />
+               </graphic>
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnInicio" fx:id="btnInventario" maxWidth="1.7976931348623157E308" onAction="#btnInventario" prefHeight="60.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Inventario" textFill="WHITE">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="CART" size="25" />
+               </graphic>
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnInicio" fx:id="btnGastos" maxWidth="1.7976931348623157E308" onAction="#btnGastos" prefHeight="60.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Gastos" textFill="WHITE">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="EXPORT" size="25" />
+               </graphic>
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btnInicio" fx:id="btnReportes" maxWidth="1.7976931348623157E308" onAction="#btnReportes" prefHeight="60.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Vales" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="23" />
+               </graphic>
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Separator maxHeight="1.7976931348623157E308" orientation="VERTICAL" visible="false" VBox.vgrow="ALWAYS" />
+            <JFXButton fx:id="btnSalir" maxWidth="1.7976931348623157E308" onAction="#btnSalir" prefHeight="60.0" text="Salir" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="POWER" size="25" />
+               </graphic>
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ImageView fitHeight="478.0" fitWidth="642.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Img/aaa1.png" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>

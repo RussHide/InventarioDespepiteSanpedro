@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaginaInventario.ModalExportarInventarioController">
+   <children>
+      <TableView fx:id="tablaReporteInventario" layoutX="153.0" layoutY="186.0" prefHeight="324.0" prefWidth="830.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colDescripcion" prefWidth="75.0" text="Descripcion" />
+            <TableColumn fx:id="colCantidad" prefWidth="75.0" text="Cantidad" />
+            <TableColumn fx:id="colUnidades" prefWidth="75.0" text="Unidades" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXDatePicker fx:id="txtFechaReporte" layoutX="68.0" layoutY="58.0" onKeyTyped="#validarTxtFecha" promptText="Seleccione la fecha " />
+      <Label layoutX="14.0" layoutY="14.0" text="¿De que dia sera el reporte de inventario?">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton id="btnNormal" fx:id="btnGenerar" layoutX="457.0" layoutY="61.0" onAction="#btnGenerar" prefHeight="30.0" prefWidth="120.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Generar" />
+      <JFXButton id="btnCancelar" fx:id="btnCancelar" layoutX="635.0" layoutY="58.0" onAction="#btnCancelar" prefHeight="30.0" prefWidth="120.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Cancelar" />
+      <JFXButton id="btnNormal" fx:id="btnBuscar" layoutX="260.0" layoutY="59.0" onAction="#btnBuscar" prefHeight="30.0" prefWidth="120.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Buscar" />
+      <JFXRadioButton fx:id="radioBtnExcel" layoutX="431.0" layoutY="30.0" text="Excel">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoExportarInventario" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton fx:id="radioBtnPDF" layoutX="529.0" layoutY="30.0" text="PDF" toggleGroup="$grupoExportarInventario" />
+   </children>
+</AnchorPane>

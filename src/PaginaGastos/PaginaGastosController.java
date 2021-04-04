@@ -1,0 +1,15 @@
+package PaginaGastos;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.Initializable;
+
+public class PaginaGastosController implements Initializable {
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        inventariofx.FXMLDocumentController.variableControlVentana = "/PaginaGastos/PaginaGastos";
+
+    }
+
+}

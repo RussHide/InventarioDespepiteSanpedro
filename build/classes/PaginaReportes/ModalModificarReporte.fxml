@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaginaReportes.ModalModificarReporteController">
+   <children>
+      <Label layoutX="98.0" layoutY="14.0" text="Modificar vale" AnchorPane.leftAnchor="98.0">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="86.0" layoutX="115.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="467.0">
+         <image>
+            <Image url="@../Img/eraser.png" />
+         </image>
+      </ImageView>
+      <JFXTextArea fx:id="txtModificarDescripcion" disable="true" layoutX="35.0" layoutY="177.0" prefHeight="60.0" prefWidth="300.0" promptText="Descripción" AnchorPane.leftAnchor="35.0" />
+      <JFXTextArea fx:id="txtModificarObservacion" disable="true" layoutX="365.0" layoutY="176.0" prefHeight="60.0" prefWidth="300.0" promptText="Observación" AnchorPane.rightAnchor="35.0" />
+      <JFXTextField fx:id="txtModificarEntrego" disable="true" layoutX="35.0" layoutY="262.0" prefWidth="300.0" promptText="Entregó" AnchorPane.leftAnchor="35.0" />
+      <JFXTextField fx:id="txtModificarRecibio" disable="true" layoutX="367.0" layoutY="262.0" prefWidth="300.0" promptText="Recibió" AnchorPane.rightAnchor="35.0" />
+      <JFXDatePicker fx:id="txtModificarFecha" disable="true" layoutX="44.0" layoutY="323.0" prefWidth="300.0" promptText="Fecha" AnchorPane.leftAnchor="35.0" />
+      <JFXTextField fx:id="txtModificarCodigoInsumo" disable="true" layoutX="33.0" layoutY="373.0" prefHeight="25.0" prefWidth="158.0" promptText="Codigo del insumo" AnchorPane.leftAnchor="35.0" />
+      <JFXTextField fx:id="txtModificarCantidad" disable="true" layoutX="386.0" layoutY="323.0" prefWidth="300.0" promptText="Cantidad" AnchorPane.rightAnchor="35.0" />
+      <JFXButton id="btnAceptar" fx:id="btnModificarAceptar" disable="true" layoutX="115.0" layoutY="440.0" onAction="#btnModificarAceptar" prefWidth="150.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Aceptar" />
+      <JFXButton id="btnCancelar" fx:id="btnModificarCancelar" layoutX="435.0" layoutY="440.0" onAction="#btnModificarCancelar" prefWidth="150.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Cancelar" />
+      <JFXTextField fx:id="txtModificarNombreInsumo" disable="true" editable="false" layoutX="210.0" layoutY="373.0" prefWidth="135.0" promptText="Nombre del insumo" />
+      <JFXTextField fx:id="txtModificarUnidad" disable="true" editable="false" layoutX="366.0" layoutY="373.0" prefWidth="135.0" promptText="Unidad" />
+      <JFXButton fx:id="btnModificarComprobar" disable="true" layoutX="535.0" layoutY="373.0" prefHeight="25.0" prefWidth="110.0" text="Comprobar" />
+      <Label layoutX="488.0" layoutY="52.0" prefHeight="20.0" prefWidth="138.0" text="¿Que tipo de vale es?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="radioBtnModificarEntrada" layoutX="476.0" layoutY="88.0" onAction="#radioBtnModificarEntrada" prefWidth="70.0" text="Entrada">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoModificarSeleccion" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radiobtnModificarSalida" layoutX="565.0" layoutY="88.0" onAction="#radiobtnModificarSalida" prefWidth="70.0" text="Salida" toggleGroup="$grupoModificarSeleccion" />
+      <Label layoutX="282.0" layoutY="29.0" prefHeight="17.0" prefWidth="86.0" />
+      <Label fx:id="lblControlModificar" disable="true" layoutX="14.0" layoutY="6.0" visible="false" />
+   </children>
+</AnchorPane>

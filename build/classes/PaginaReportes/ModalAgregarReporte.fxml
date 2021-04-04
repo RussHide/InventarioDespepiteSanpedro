@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="1098.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaginaReportes.ModalAgregarReporteController">
+   <children>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="19.0" text="Agregar vale" AnchorPane.leftAnchor="54.0">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="86.0" layoutX="100.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="921.0">
+         <image>
+            <Image url="@../Img/note.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="395.0" layoutY="58.0" prefHeight="20.0" prefWidth="138.0" text="¿Que tipo de vale es?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="radioBtnEntrada" layoutX="383.0" layoutY="94.0" onAction="#radioBtnEntrada" text="Entrada">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoSeleccionTipo" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton fx:id="radioBtnSalida" layoutX="472.0" layoutY="94.0" onAction="#radioBtnSalida" text="Salida" toggleGroup="$grupoSeleccionTipo" />
+      <JFXTextArea fx:id="txtValeDescripcion" disable="true" layoutX="35.0" layoutY="177.0" onKeyTyped="#txtLimiteDescripcion" prefHeight="60.0" prefWidth="260.0" promptText="Descripción" style="-fx-border-width: 1px 1px 0px 1px; -fx-border-color: grey;" AnchorPane.leftAnchor="30.0" />
+      <JFXTextArea fx:id="txtValeObservacion" disable="true" layoutX="321.0" layoutY="177.0" onKeyTyped="#txtLimiteObservacion" prefHeight="60.0" prefWidth="260.0" promptText="Observación" style="-fx-border-width: 1px 1px 0px 1px; -fx-border-color: grey;" />
+      <JFXTextField fx:id="txtValeEntrego" disable="true" layoutX="35.0" layoutY="262.0" prefWidth="260.0" promptText="Entregó" AnchorPane.leftAnchor="30.0" />
+      <JFXTextField fx:id="txtValeRecibio" disable="true" layoutX="321.0" layoutY="262.0" prefWidth="260.0" promptText="Recibió" />
+      <JFXDatePicker fx:id="txtValeFecha" defaultColor="#7661b9" disable="true" layoutX="44.0" layoutY="323.0" onKeyTyped="#validarTxtFecha" prefWidth="260.0" promptText="Fecha" AnchorPane.leftAnchor="30.0" />
+      <JFXTextField fx:id="txtValeCodigoInsumo" disable="true" layoutX="642.0" layoutY="99.0" prefHeight="25.0" prefWidth="130.0" promptText="Codigo del inumo" AnchorPane.leftAnchor="642.0" />
+      <JFXTextField fx:id="txtValeCantidad" disable="true" layoutX="999.0" layoutY="99.0" onKeyTyped="#validarTxtCantiad" prefHeight="25.0" prefWidth="50.0" promptText="Cantidad" AnchorPane.rightAnchor="30.0" />
+      <JFXButton id="btnAceptar" fx:id="btnAceptar" disable="true" layoutX="68.0" layoutY="388.0" onAction="#btnAceptar" prefWidth="150.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Aceptar" />
+      <JFXButton id="btnCancelar" fx:id="btnCancelar" layoutX="398.0" layoutY="388.0" onAction="#btnCancelar" prefWidth="150.0" stylesheets="@../CSS/botonesAcepCanel.css" text="Cancelar" />
+      <JFXTextField fx:id="txtUnidadPorCodigo" disable="true" editable="false" focusColor="TRANSPARENT" layoutX="927.0" layoutY="99.0" prefHeight="25.0" prefWidth="80.0" promptText="Tipo de unidad" />
+      <JFXTextField fx:id="txtNombrePorCodigo" disable="true" editable="false" focusColor="#ffffff00" layoutX="787.0" layoutY="99.0" prefWidth="130.0" promptText="Nombre del insumo" />
+      <Label fx:id="lblTipoVale" layoutX="223.0" layoutY="37.0" prefHeight="17.0" prefWidth="86.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtFolio" disable="true" layoutX="321.0" layoutY="323.0" prefWidth="260.0" promptText="Folio" />
+      <JFXTextField fx:id="txtValeCantidad3" disable="true" layoutX="999.0" layoutY="214.0" prefWidth="50.0" promptText="Cantidad" AnchorPane.rightAnchor="30.0" />
+      <JFXTextField fx:id="txtValeCantidad2" disable="true" layoutX="999.0" layoutY="159.0" prefWidth="50.0" promptText="Cantidad" AnchorPane.rightAnchor="30.0" />
+      <JFXTextField fx:id="txtValeCantidad4" disable="true" layoutX="999.0" layoutY="269.0" prefWidth="50.0" promptText="Cantidad" AnchorPane.rightAnchor="30.0" />
+      <JFXTextField fx:id="txtValeCantidad5" disable="true" layoutX="999.0" layoutY="324.0" prefWidth="50.0" promptText="Cantidad" AnchorPane.rightAnchor="30.0" />
+      <JFXTextField fx:id="txtUnidadPorCodigo2" disable="true" editable="false" layoutX="927.0" layoutY="159.0" prefWidth="80.0" promptText="Tipo de unidad" />
+      <JFXTextField fx:id="txtNombrePorCodigo3" disable="true" editable="false" layoutX="787.0" layoutY="214.0" prefWidth="130.0" promptText="Nombre del insumo" />
+      <JFXTextField fx:id="txtNombrePorCodigo4" disable="true" editable="false" layoutX="787.0" layoutY="269.0" prefWidth="130.0" promptText="Nombre del insumo" />
+      <JFXTextField fx:id="txtNombrePorCodigo5" disable="true" editable="false" layoutX="787.0" layoutY="324.0" prefWidth="130.0" promptText="Nombre del insumo" />
+      <JFXTextField fx:id="txtUnidadPorCodigo5" disable="true" editable="false" layoutX="927.0" layoutY="324.0" prefWidth="80.0" promptText="Tipo de unidad" />
+      <JFXTextField fx:id="txtNombrePorCodigo2" disable="true" editable="false" layoutX="787.0" layoutY="159.0" prefWidth="130.0" promptText="Nombre del insumo" />
+      <JFXTextField fx:id="txtUnidadPorCodigo4" disable="true" editable="false" layoutX="927.0" layoutY="269.0" prefWidth="80.0" promptText="Tipo de unidad" />
+      <JFXTextField fx:id="txtUnidadPorCodigo3" disable="true" editable="false" layoutX="927.0" layoutY="214.0" prefWidth="80.0" promptText="Tipo de unidad" />
+      <JFXTextField fx:id="txtValeCodigoInsumo2" disable="true" layoutX="642.0" layoutY="159.0" promptText="Codigo insumo" />
+      <JFXTextField fx:id="txtValeCodigoInsumo3" disable="true" layoutX="642.0" layoutY="214.0" promptText="Codigo insumo" />
+      <JFXTextField fx:id="txtValeCodigoInsumo4" disable="true" layoutX="642.0" layoutY="269.0" promptText="Codigo insumo" />
+      <JFXTextField fx:id="txtValeCodigoInsumo5" disable="true" layoutX="642.0" layoutY="324.0" promptText="Codigo insumo" />
+      <Separator layoutX="596.0" layoutY="25.0" orientation="VERTICAL" AnchorPane.bottomAnchor="25.0" AnchorPane.topAnchor="25.0" />
+      <Label alignment="CENTER" layoutX="618.0" layoutY="26.0" prefHeight="39.0" prefWidth="432.0" text="Insumos a agregar">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnComprobarInsumos" disable="true" layoutX="813.0" layoutY="388.0" onAction="#btnComprobarInsumos" text="Comprobar insumos" />
+      <JFXRadioButton fx:id="radiobtnEnable2" disable="true" layoutX="612.0" layoutY="163.0" onAction="#radiobtnEnable2" prefHeight="17.0" prefWidth="6.0" textFill="#ffffff00">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radiobtnEnable3" disable="true" layoutX="612.0" layoutY="218.0" onAction="#radiobtnEnable3" textFill="#ffffff00">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radiobtnEnable4" disable="true" layoutX="612.0" layoutY="273.0" onAction="#radiobtnEnable4" textFill="#ffffff00">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radiobtnEnable5" disable="true" layoutX="612.0" layoutY="327.0" onAction="#radiobtnEnable5" textFill="#ffffff00">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>

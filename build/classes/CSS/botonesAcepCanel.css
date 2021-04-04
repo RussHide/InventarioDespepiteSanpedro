@@ -1,0 +1,46 @@
+.button{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ButtonSkin";
+}
+#btnAceptar:hover{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #2ad156;
+    -fx-cursor: hand;
+}
+#btnAceptar:pressed{
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-color: #2ad156;
+    -fx-cursor: hand;
+}
+#btnCancelar:hover{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #cf4d4a;
+    -fx-cursor: hand;
+}
+#btnCancelar:pressed{
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-color: #cf4d4a;
+    -fx-cursor: hand;
+}
+#btnNormal:hover{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #615f5b;
+    -fx-cursor: hand;
+}
+#btnNormal:pressed{
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-color: #615f5b;
+
+}
+
+
+
+#btnInicio:hover{
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-border-color: #a188f2;
+    -fx-cursor: hand;
+}
+#btnInicio:pressed{
+    -fx-border-width: 0px 0px 0px 6px;
+    -fx-border-color: transparent;
+
+}

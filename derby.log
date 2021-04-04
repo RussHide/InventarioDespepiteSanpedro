@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Mar 21 17:37:07 CST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0178-5726-3d63-00000892afc0 
+on database directory C:\Users\Kay\Documents\NetBeansProjects\InventarioFX\InventarioDespepiteBD with class loader sun.misc.Launcher$AppClassLoader@42a57993 
+Loaded from file:/C:/Users/Kay/Documents/NetBeansProjects/InventarioFX/dist/run1331524711/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_111-b14
+user.dir=C:\Users\Kay\Documents\NetBeansProjects\InventarioFX
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
